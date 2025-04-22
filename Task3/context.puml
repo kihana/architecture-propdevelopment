@@ -1,0 +1,13 @@
+@startuml C4_SmartHome
+
+!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(owner, "Собственник")
+
+System(mobileApp, "Мобильное приложение", "Поддерживаемые функции: интеллектуальный домофон, интеллектуальный шлагбаум")
+System_Ext(partner, "Партнер")
+
+Rel(owner, mobileApp, "Uses")
+Rel(partner, mobileApp, "Support")
+
+@enduml
