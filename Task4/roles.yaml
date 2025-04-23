@@ -1,0 +1,26 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: secret-viewer
+rules:
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get", "list"]
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: viewer
+rules:
+- apiGroups: ["", "apps", "batch", "extensions", "networking.k8s.io", "rbac.authorization.k8s.io", "policy", "autoscaling"]
+  resources: ["*"]
+  verbs: ["get", "list"]
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: admin
+rules:
+- apiGroups: ["", "apps", "rbac.authorization.k8s.io"]
+  resources: ["pods", "services", "deployments", "roles", "rolebindings", "namespaces"]
+  verbs: ["*"]

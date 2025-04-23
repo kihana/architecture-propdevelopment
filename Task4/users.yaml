@@ -1,0 +1,20 @@
+{
+  "sub": "123",
+  "email": "sec-user@company.com",
+  "name": "Ivanov",
+  "groups": ["security-user"]
+}
+
+{
+  "sub": "234",
+  "email": "dev-user@company.com",
+  "name": "Petrov",
+  "groups": ["developer"]
+}
+
+{
+  "sub": "345",
+  "email": "admin-user@company.com",
+  "name": "Sidorov",
+  "groups": ["devops"]
+}
