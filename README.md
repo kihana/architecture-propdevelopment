@@ -39,3 +39,12 @@
 Роли: [здесь](Task4/roles.yaml)
 
 Биндинги: [здесь](Task4/bindings.yaml)
+
+## Task5
+[admin-api-allow-back-to-front.yaml](Task5/admin-api-allow-back-to-front.yaml)
+
+[admin-api-allow-front-to-back.yaml](Task5/admin-api-allow-front-to-back.yaml)
+
+[non-admin-api-allow-back-to-front.yaml](Task5/non-admin-api-allow-back-to-front.yaml)
+
+[non-admin-api-allow-front-to-back.yaml](Task5/non-admin-api-allow-front-to-back.yaml)
