@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: viewer
+rules:
+- apiGroups: ["", "apps", "batch", "extensions", "networking.k8s.io", "rbac.authorization.k8s.io", "policy", "autoscaling"]
+  resources: ["*"]
+  verbs: ["get", "list"]
